@@ -1,176 +1,281 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>E-Commerce and the Minishop2 Ecosystem</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+	<style>
+		a {
+			color: #097373;
+		}
+		.full .progress div {
+			background: #097373;
+		}
+		.slide.shout {
+			background: #097373;
+		}
+		.shout h2 {
+			text-align: center;
+			font-weight: 900;
+			line-height: 1.4;
+		}
+	</style>
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>E-Commerce and the Minishop2 Ecosystem</h1>
+		<p>How small tool start the growth a big marketplace</p>
+		<p>Ivan Klimchuk, <a href="http://alroniks.com" target="_blank">Alroniks Experts</a></p>
 	</header>
 	<section class="slide cover" id="Cover"><div>
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
+		<h2>E-Commerce and the Minishop2 Ecosystem</h2>
+		<p>How small tool start the growth a big marketplace</p>
+		<p class="author"><a href="http://klimchul.com">Ivan Klimchuk</a>, Alroniks Experts</p>
+		<img src="pictures/coins.jpg" alt="">
 		<style>
+			/* 
+				alroniks color: 343d44
+			*/
+			#Cover {
+				background: #fff;
+				position: relative;
+			}
+			#Cover img {
+				max-width: 100%;
+				padding: 0 80px;
+				margin-top: 100px;
+				box-sizing: border-box;
+			}
 			#Cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
+				margin: -50px 0 0;
+				color: #343d44;
+				text-align: center;
+				font-size: 70px;
+				font-weight: 900;
 				}
+			#Cover .author {
+				position: absolute;
+				right: 0;
+				bottom: -10px;
+				margin-right: 150px;
+			}
 			#Cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
+				position: relative;
+				text-align: center;
+				color: #343d44;
 				font-style:italic;
-				font-size:20px;
+				font-size: 30px;
 				}
 				#Cover p a {
-					color:#FFF;
-					}
-		</style>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Shower Key Features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>All modern browsers are supported</li>
-			<li>Slide themes are separated from engine</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Plain Text on Your Slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>All Kind of Lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Serious Citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Code Samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code>&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Even Tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</div></section>
-	<section class="slide cover" id="Picture"><div>
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="">
-		<style>
-			#Picture h2 {
-				color:#FFF;
+					color: #343d44;
 				}
 		</style>
 	</div></section>
+	<section class="slide cover" id="Iam"><div>
+		<h2>Ivan Klimchuk</h2>
+		<ul>
+			<li class="next">Fullstack web developer</li>
+			<li class="next">MODXer since 2010</li>
+			<li class="next">MODX Ambassador in Belarus </li>
+			<li class="next">MODX Professional <sup></sup></li>
+			<li class="next">Love MODX and Open Source</li>
+			<p class="note">
+				<span class="next">MODX Belarus</span>
+				<br>
+				<span class="next">Alroniks Experts</span>
+			</p>
+		</ul>
+		<img src="pictures/hood.jpg" alt="">
+		<style>
+			#Iam {
+				color: #fff;
+			}
+			#Iam img {
+				max-width: 100%;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide shout cover" id="Ecommerce"><div>
+		<img class="width" src="pictures/btn.jpg" alt="">
+		<style>
+			#Ecommerce img {
+				max-width: 100%;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Required parts</h2>
+		<ul>
+			<li>Cart</li>
+			<li>Orders</li>
+			<li>Catalog List</li>
+			<li>Delivery</li>
+			<li>Payment</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Minishop. First gen. History</h2>
+
+		<p>some words about history and first version</p>
+
+	</div></section>
+
+	<!-- part two -->
+
 	<section class="slide shout"><div>
-		<h2>You can even shout this way</h2>
+		<h2>Mini Shop 2</h2>
 	</div></section>
+
+		<section class="slide"><div>
+		<h2>What ms can do</h2>
+		<p>
+			list and each item with screen at the right side
+		</p>
+	</div></section>
+
 	<section class="slide"><div>
-		<h2>Inner Navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>MODX == modular and extensible</h2>
+		<h3>MS too</h3>
+		<p>
+			really?
+		</p>
 	</div></section>
-	<section class="slide shout" id="SeeMore"><div>
-		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
+
+	<section class="slide"><div>
+		<h2>Cart handler</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Order handler</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Delivery handler</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Payment handler</h2>
+		stats	
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Awesome! field plugins</h2>
+		more words
+	</div></section>
+
+	<!-- part 3	 -->
+
+	<section class="slide"><div>
+		<h2>Current status of minishop2</h2>
+		documentation, versions, plans
+
+		you can ask me if you want help
+	</div></section>
+
+	<!-- слайд отбивка? -->
+	<section class="slide shout"><div>
+		<h2>Ecosystem</h2>
+	</div></section>
+
+	<section class="slide" data-timing="1" id="Extras"><div>
+		<h2>Extras</h2>
+		<div class="column">
+			<ul>
+				<li class="next">extra-1</li>
+				<li class="next">extra-2</li>
+				<li class="next">extra-3</li>
+				<li class="next">extra-4</li>
+				<li class="next">extra-5</li>
+			</ul>	
+		</div>
+		<div class="column">
+			<ul>
+				<li class="next">extra-1</li>
+				<li class="next">extra-2</li>
+				<li class="next">extra-3</li>
+				<li class="next">extra-4</li>
+				<li class="next">extra-5</li>
+			</ul>
+		</div>
+		<div class="column">
+			<ul>
+				<li class="next">extra-1</li>
+				<li class="next">extra-2</li>
+				<li class="next">extra-3</li>
+				<li class="next">extra-4</li>
+				<li class="next">extra-5</li>
+			</ul>
+		</div>
 		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
-			#SeeMore h2 {
-				font-size:100px
-				}
-			#SeeMore img {
-				width:0.72em;
-				height:0.72em;
-				}
+			#Extras .column {
+				box-sizing: border-box;
+				display: inline-block;
+				width: 32%;
+			}
 		</style>
 	</div></section>
-	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
+
+	<section class="slide"><div>
+		<h2>Repository? Not secret. How create own</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Store or marketplace? Waht is difference?</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>History of modstore.pro</h2>
+
+		logo of SD
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Numbers and charts</h2>
+	</div></section>
+
+	<section class="slide">
+		<h2>How it works?</h2>
+
+		support model
+		30%
+		developer do support and pay commision
+	</section>
+
+	<section class="slide">
+		<h2>Conclusions</h2>
+
+		?
+	</section>
+
+	<!-- final -->
+
+	<section class="slide"><div>
+		<h2 class="fit">Contacts</h2>
+		<ul>
+			<li class="next">twitter</li>
+			<li>github</li>
+			<li>slack</li>
+			<li>email</li>
+			<li>website</li>
+		</ul>	
+		<img src="pictures/logo-uo.svg" alt="">
+	</div></section>
+
+	<!-- Questions -->
+	<section class="slide shout" id="Questions"><div>
+		<h2>Thank you! Questions?</h2>
+	</div></section>
+
+	<p class="badge"><a href="https://github.com/Alroniks/pres-modxpo-mse" target="_blank">Sources on Github</a></p>
+	
 	<div class="progress"><div></div></div>
+	
 	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+	<!-- Copyright © 2015 Ivan Klimchuk, Alroniks Expert -->
 </body>
 </html>
