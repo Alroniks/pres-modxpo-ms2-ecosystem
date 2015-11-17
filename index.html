@@ -13,6 +13,14 @@
 		.full .progress div {
 			background: #097373;
 		}
+		.slide.shout {
+			background: #097373;
+		}
+		.shout h2 {
+			text-align: center;
+			font-weight: 900;
+			line-height: 1.4;
+		}
 	</style>
 </head>
 <body class="list">
@@ -25,7 +33,7 @@
 		<h2>E-Commerce and the Minishop2 Ecosystem</h2>
 		<p>How small tool start the growth a big marketplace</p>
 		<p class="author"><a href="http://klimchul.com">Ivan Klimchuk</a>, Alroniks Experts</p>
-		<img src="pictures/bug/coins.jpg" alt="">
+		<img src="pictures/coins.jpg" alt="">
 		<style>
 			/* 
 				alroniks color: 343d44
@@ -65,18 +73,38 @@
 				}
 		</style>
 	</div></section>
-	<section class="slide"><div>
+	<section class="slide cover" id="Iam"><div>
 		<h2>Ivan Klimchuk</h2>
 		<ul>
-			<li class="next">Midxer since 2010</li>
-			<li class="next">Full stack web developer</li>
-			<li class="next">MODX Ambassador in Belarus <sup class="note">since 2013?</sup></li>
-			<li class="next">Like experiments and bikes</li>
+			<li class="next">Fullstack web developer</li>
+			<li class="next">MODXer since 2010</li>
+			<li class="next">MODX Ambassador in Belarus </li>
+			<li class="next">MODX Professional <sup></sup></li>
+			<li class="next">Love MODX and Open Source</li>
+			<p class="note">
+				<span class="next">MODX Belarus</span>
+				<br>
+				<span class="next">Alroniks Experts</span>
+			</p>
 		</ul>
+		<img src="pictures/hood.jpg" alt="">
+		<style>
+			#Iam {
+				color: #fff;
+			}
+			#Iam img {
+				max-width: 100%;
+			}
+		</style>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Ecommerce? What is?</h2>
+	<section class="slide shout cover" id="Ecommerce"><div>
+		<img class="width" src="pictures/btn.jpg" alt="">
+		<style>
+			#Ecommerce img {
+				max-width: 100%;
+			}
+		</style>
 	</div></section>
 
 	<section class="slide"><div>
@@ -154,9 +182,42 @@
 		<h2>Ecosystem</h2>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>extras</h2>
-		list of extras for marketplace
+	<section class="slide" data-timing="1" id="Extras"><div>
+		<h2>Extras</h2>
+		<div class="column">
+			<ul>
+				<li class="next">extra-1</li>
+				<li class="next">extra-2</li>
+				<li class="next">extra-3</li>
+				<li class="next">extra-4</li>
+				<li class="next">extra-5</li>
+			</ul>	
+		</div>
+		<div class="column">
+			<ul>
+				<li class="next">extra-1</li>
+				<li class="next">extra-2</li>
+				<li class="next">extra-3</li>
+				<li class="next">extra-4</li>
+				<li class="next">extra-5</li>
+			</ul>
+		</div>
+		<div class="column">
+			<ul>
+				<li class="next">extra-1</li>
+				<li class="next">extra-2</li>
+				<li class="next">extra-3</li>
+				<li class="next">extra-4</li>
+				<li class="next">extra-5</li>
+			</ul>
+		</div>
+		<style>
+			#Extras .column {
+				box-sizing: border-box;
+				display: inline-block;
+				width: 32%;
+			}
+		</style>
 	</div></section>
 
 	<section class="slide"><div>
@@ -202,22 +263,12 @@
 			<li>email</li>
 			<li>website</li>
 		</ul>	
-		img with logo
+		<img src="pictures/logo-uo.svg" alt="">
 	</div></section>
 
 	<!-- Questions -->
 	<section class="slide shout" id="Questions"><div>
 		<h2>Thank you! Questions?</h2>
-		<style>
-			#Questions {
-				background: #097373;
-			}
-			#Questions h2 {
-				text-align: center;
-				font-weight: 900;
-				line-height: 1.4;
-			}
-		</style>
 	</div></section>
 
 	<p class="badge"><a href="https://github.com/Alroniks/pres-modxpo-mse" target="_blank">Sources on Github</a></p>
