@@ -10,6 +10,12 @@
 		a {
 			color: #097373;
 		}
+		.slide.cover {
+			background: #fff;
+		}
+		.slide.cover img {
+			max-width: 100%;
+		}
 		.full .progress div {
 			background: #097373;
 		}
@@ -21,6 +27,29 @@
 			font-weight: 900;
 			line-height: 1.4;
 		}
+		.shout h3 {
+			font-size: 40px;
+			color: #fff;
+		}
+		.center {
+			text-align: center;
+		}
+		.column {
+			display: inline-block;
+		}
+		.column.x2 {
+			width: 49%;
+		}
+		.column.x3 {
+			width: 32%;
+		}
+		.wip {
+			outline: 20px solid orangered;
+		}
+		.no {
+			text-decoration: line-through;
+			color: gray;
+		}
 	</style>
 </head>
 <body class="list">
@@ -29,6 +58,7 @@
 		<p>How small tool start the growth a big marketplace</p>
 		<p>Ivan Klimchuk, <a href="http://alroniks.com" target="_blank">Alroniks Experts</a></p>
 	</header>
+
 	<section class="slide cover" id="Cover"><div>
 		<h2>E-Commerce and the Minishop2 Ecosystem</h2>
 		<p>How small tool start the growth a big marketplace</p>
@@ -73,6 +103,7 @@
 				}
 		</style>
 	</div></section>
+
 	<section class="slide cover" id="Iam"><div>
 		<h2>Ivan Klimchuk</h2>
 		<ul>
@@ -107,163 +138,349 @@
 		</style>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Required parts</h2>
+	<section class="slide wip" id="Shop"><div>
+		<h2>Required elements of shop</h2>
+		<dl>
+			<div class="next">
+				<dt>List of products</dt>
+				<dd><blockquote>
+					desc 1
+				</blockquote></dd>
+			</div>
+			<div class="next">
+				<dt>Cart and orders</dt>
+				<dd><blockquote>
+					cart desription
+				</blockquote></dd>
+			</div>
+			<div class="next">
+				<dt>Delivery</dt>
+			</div>
+			<div class="next">
+				<dt>Payment</dt>
+			</div>
+		</dl>
+		<style>
+			#Shop dt {
+				font-weight: bold;
+			}
+			#Shop dd {
+				position: absolute;
+				width: 45%;
+				height: 50%;
+				right: 5%;
+				top: 35%;
+				background: #fff;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide" id="Ms1"><div>
+		<h2>Minishop. First generation</h2>
+		<p class="note">Released on 28th of Febrary, 2012<br>
+		as alternative existing VisionCart and Shopkeeper</p>
 		<ul>
-			<li>Cart</li>
-			<li>Orders</li>
-			<li>Catalog List</li>
-			<li>Delivery</li>
-			<li>Payment</li>
+			<li class="next">Categories, multicategories and products<br>
+			(via system settings and templates)</li>
+			<li class="next">Warehouses (no more in version 2)</li>
+			<li class="next">Cart, orders, order statuses</li>
+			<li class="next">Payment not extensible</li>
 		</ul>
+		<img src="pictures/mslogo.png" alt="">
+		<style>
+			#Ms1 p {
+				margin-bottom: 10px;
+			}
+			#Ms1 img {
+				position: absolute;
+				right: 10%;
+				bottom: 15%;
+				width: 300px;
+				height: 150px;
+				background: blue;
+			}
+		</style>
 	</div></section>
-
-	<section class="slide"><div>
-		<h2>Minishop. First gen. History</h2>
-
-		<p>some words about history and first version</p>
-
-	</div></section>
-
-	<!-- part two -->
 
 	<section class="slide shout"><div>
 		<h2>Mini Shop 2</h2>
 	</div></section>
 
-		<section class="slide"><div>
+	<section class="slide"><div>
+		<h2>Mini Shop 2</h2>
+		<ul>
+			<li class="next">Released in a year after first version: March 3, 2013</li>
+			<li class="next">Warehouses was removed</li>
+			<li class="next">Categories and Products as CRC</li>
+			<li class="next">Cart, Orders, Statuses was rewritten</li>
+			<li class="next">Was added Deliveries and Payments, also Gallery</li>
+			<li class="next">Relations between products, Customisible Options</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover wip"><div>
+		<h2>Cart</h2>
+		<img class="width" src="pictures/credit-card.jpg" alt="">
+	</div></section>
+
+	<section class="slide wip"><div>
 		<h2>What ms can do</h2>
 		<p>
 			list and each item with screen at the right side
 		</p>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>MODX == modular and extensible</h2>
+	<section class="slide wip" id="Modx"><div>
+		<h2><strong>MOD</strong>ular and e<strong>X</strong>tendable</h2>
 		<h3>MS too</h3>
 		<p>
 			really?
 		</p>
+		<style>
+			#Modx h2 strong {
+				font-family: 'Open Sans';
+			}
+		</style>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide wip"><div>
 		<h2>Cart handler</h2>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide wip"><div>
 		<h2>Order handler</h2>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide wip"><div>
 		<h2>Delivery handler</h2>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide wip"><div>
 		<h2>Payment handler</h2>
 		stats	
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide wip"><div>
 		<h2>Awesome! field plugins</h2>
 		more words
 	</div></section>
 
-	<!-- part 3	 -->
-
-	<section class="slide"><div>
-		<h2>Current status of minishop2</h2>
-		documentation, versions, plans
-
-		you can ask me if you want help
+	<section class="slide wip"><div>
+		<h2>Other ways to extend or change behavior</h2>
+		more words
 	</div></section>
 
-	<!-- слайд отбивка? -->
+	<section class="slide"><div>
+		<h2>Current status of MiniShop</h2>
+		<ul class="next">			
+			<li>Downloaded and installed 4,5k times</li>
+			<li>Brings money for to owners of shops</li>
+			<li>Just works!</li>
+		</ul>
+		<ul class="next">
+			<li>Mess in releases after attemts develop it by community</li>
+			<li>Existing code need to refactored</li>
+			<li>It need documentation</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Future of MiniShop. Good news</h2>
+		<ul>
+			<li>Coming version 3 (Vasily Naumkin)</li>
+			<li>Coming big refactoring of code and getting rid of annoying bugs</li>
+			<li><strong>More APIs for extends</strong></li>
+			<li>Also hard work on documentation news monthes</li>
+			<li>Eglish version of docs too</li>
+		</ul>
+		<p class="next note">Vasiliy promised anounce version 3 in <strong>MODX Meetup Minsk</strong><br>
+		on 19th December.</p>
+	</div></section>
+
 	<section class="slide shout"><div>
 		<h2>Ecosystem</h2>
 	</div></section>
 
-	<section class="slide" data-timing="1" id="Extras"><div>
-		<h2>Extras</h2>
-		<div class="column">
-			<ul>
-				<li class="next">extra-1</li>
-				<li class="next">extra-2</li>
-				<li class="next">extra-3</li>
-				<li class="next">extra-4</li>
-				<li class="next">extra-5</li>
-			</ul>	
-		</div>
-		<div class="column">
-			<ul>
-				<li class="next">extra-1</li>
-				<li class="next">extra-2</li>
-				<li class="next">extra-3</li>
-				<li class="next">extra-4</li>
-				<li class="next">extra-5</li>
+	<section class="slide wip" id="Vs"><div>
+		<h2 class="center">Store vs Marketplace</h2>
+
+		<div class="column x2">
+			<ul class="proscons">
+				<li class="ko">One developer or team</li>
+				<li class="ko">No way add own extra for sale</li>
+				<li class="ok">Support from team (best quality)</li>
+				<li class=""></li>
 			</ul>
 		</div>
-		<div class="column">
-			<ul>
-				<li class="next">extra-1</li>
-				<li class="next">extra-2</li>
-				<li class="next">extra-3</li>
-				<li class="next">extra-4</li>
-				<li class="next">extra-5</li>
+		<div class="column x2">
+			<ul class="proscons">
+				<li class="ok">Many independent developers</li>
+				<li>Easy to add own extra</li>
 			</ul>
 		</div>
+
+		<ol>
+			<li class="next">Official MODX Repository - <span class="no">market</span>place</li>
+			<li class="next">modstore.pro</li>
+		</ol>
+
 		<style>
-			#Extras .column {
-				box-sizing: border-box;
-				display: inline-block;
-				width: 32%;
+			#Vs .proscons {
+
+			}
+		</style>
+	</div></section>
+
+	<section class="slide" id="Stores"><div>
+		<h2>Existing stores</h2>
+		<ul>
+			<li>modmore.com - Mark Hamstra and team</li>
+			<li>extras.io - Adido Team</li>
+			<li>rstore.pro - Vladimir Grishin</li>
+			<li><span class="no">aestore.by</span> - me, wip</li>
+		</ul>
+		<p class="note">I hope in future each store will growth to real marketplace.<br> 
+		It's have to impact, but give awesome results.</p>
+		<img src="pictures/fingerup.png" alt="">
+		<style>
+			#Stores img {
+				position: absolute;
+				top: 17%;
+				right: 10%;
+				width: 200px;
+				height: 200px;
+				background: blue;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide wip" id="Modstore"><div>
+		<h2>History of modstore.pro</h2>
+		<ul>
+			<li class="next">Started on 11th of June, 2013</li>
+			<li class="next"><strong>store.simpledream.ru</strong> at first</li>
+			<li class="next">Basically extras from staff</li>
+		</ul>
+		<img src="pictures/sd.png" alt="">
+		<style>
+			#Modstore img {
+				width: 100px;
+				position: absolute;
+				right: 15%;
+				top: 9%;
 			}
 		</style>
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Repository? Not secret. How create own</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Store or marketplace? Waht is difference?</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>History of modstore.pro</h2>
-
-		logo of SD
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Numbers and charts</h2>
-	</div></section>
-
-	<section class="slide">
 		<h2>How it works?</h2>
+		<ol>
+			<li>Developer send Extra to Store</li>
+			<li>Store check and validate developer and Extra</li>
+			<li>Store publish Extra and provide payment tools</li>
+			<li>After developer provide support to customers throught Store</li>
+		</ol>
+		<p class="note">
+			For paid extras average commision is <strong>30%</strong>. 
+			<br>
+			Store guarantee support only for paid extras.
+		</p>
+	</div></section>
 
-		support model
-		30%
-		developer do support and pay commision
-	</section>
+	<section class="slide" id="Numbers"><div>
+		<h2>Numbers and dynamic</h2>
+		<div class="next column x2">
+			<h3><strong>11/19/2013</strong></h3>
+			<ul>
+				<li><strong>34</strong> Extras</li>
+				<li><strong>1 291</strong> Users</li>
+				<li><strong>1 944</strong> Sites</li>
+				<li><strong>9 188</strong> Downloads</li>
+			</ul>
+		</div>
+		<div class="next column x2">
+			<h3><strong>11/19/2015</strong></h3>
+			<ul>
+				<li><strong>130</strong> Extras</li>
+				<li><strong>5 477</strong> Users</li>
+				<li><strong>10 702</strong> Sites</li>
+				<li><strong>67 000</strong> Downloads</li>
+			</ul>
+		</div>
+		<p class="next note">
+			Now: Revenue grew <strong>10</strong> times, <strong>mSearch2</strong> still in top, <strong>25</strong> authors
+		</p>
+		<img src="pictures/garrow.jpg" alt="">
+		<style>
+			#Numbers img {
+				position: absolute;
+				top: 2%;
+				right: 20%;
+				width: 200px;
+			}
+		</style>
+	</div></section>
 
-	<section class="slide">
+	<section class="slide cover" id="Cloud"><div>
+		<img src="pictures/cloud.png" alt="">
+		<style>
+			#Cloud img {
+				margin-top: 5%;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h3 class="center">Is it easy?</h3>
+		<h2>¯\_(ツ)_/¯</h2>
+	</div></section>
+
+	<section class="slide wip"><div>
+		<h2>How it create?</h2>
+	</div></section>
+
+	<section class="slide wip"><div>
+		<h2>How it support?</h2>
+	</div></section>
+
+	<section class="slide wip"><div>
 		<h2>Conclusions</h2>
 
-		?
-	</section>
-
-	<!-- final -->
-
-	<section class="slide"><div>
-		<h2 class="fit">Contacts</h2>
 		<ul>
-			<li class="next">twitter</li>
-			<li>github</li>
-			<li>slack</li>
-			<li>email</li>
-			<li>website</li>
+			<li class="next">One </li>
+
+		</ul>
+	</div></section>
+
+	<section class="slide" id="Contacts"><div>
+		<h2>Contacts</h2>
+		<ul>
+			<li class="next"><a href="https://twitter.com/iklimchuk">iklimchuk</a> – Twitter</li>
+			<li class="next"><a href="https://github.com/Alroniks/">Alroniks</a> – Github</li>
+			<br>
+			<li class="next"><a href="http://klimchuk.com">klimchuk.com</a></li>
+			<li class="next"><a href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a></li>
+			<p class="next note">Nickname - alroniks</p>
 		</ul>	
-		<img src="pictures/logo-uo.svg" alt="">
+		<span class="next">
+			<img class="ae" src="pictures/ae.svg" alt="">
+		</span>
+		<span class="next">
+			<img class="aes" src="pictures/aes.svg" alt="">
+		</span>
+		<style>
+			#Contacts img {
+				position: absolute;
+				width: 30%;
+				right: 15%;
+			}
+			#Contacts img.ae {
+				top: 30%;
+			}
+			#Contacts img.aes {
+				top: 60%;
+			}
+		</style>
 	</div></section>
 
 	<!-- Questions -->
