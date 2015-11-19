@@ -36,6 +36,7 @@
 		}
 		.column {
 			display: inline-block;
+			vertical-align: top;
 		}
 		.column.x2 {
 			width: 49%;
@@ -43,8 +44,23 @@
 		.column.x3 {
 			width: 32%;
 		}
+		.pc .ok:before {
+			content: "ok";
+			color: forestgreen;
+			padding-right: 15px;
+			margin-left: -15px;
+		}
+		.pc .ko:before {
+			content: "no";
+			color: orangered;
+			padding-right: 15px;
+			margin-left: -15px;
+		}
 		.wip {
 			outline: 20px solid orangered;
+		}
+		.almost {
+			outline: 20px solid yellow;
 		}
 		.no {
 			text-decoration: line-through;
@@ -138,27 +154,42 @@
 		</style>
 	</div></section>
 
-	<section class="slide wip" id="Shop"><div>
+	<section class="slide" id="Shop"><div>
 		<h2>Required elements of shop</h2>
 		<dl>
 			<div class="next">
-				<dt>List of products</dt>
+				<dt>Categories and products</dt>
 				<dd><blockquote>
-					desc 1
+					List of categories, list of products, multicategories, sorting by price, list of brands,
+					sorting by brand, related products, product page, rating and reviews...
 				</blockquote></dd>
 			</div>
 			<div class="next">
 				<dt>Cart and orders</dt>
 				<dd><blockquote>
-					cart desription
+					Cart block on pages, checkout page, order details, email notifies, chat notifies, statuses of order...
 				</blockquote></dd>
 			</div>
 			<div class="next">
-				<dt>Delivery</dt>
+				<dt>Deliveries</dt>
+				<dd><blockquote>
+					Address details, user details, additional cost depending on sizes, weight, distance, should have ability customize logic...
+				</blockquote></dd>
 			</div>
 			<div class="next">
-				<dt>Payment</dt>
+				<dt>Payments</dt>
+				<dd><blockquote>
+					Additional cost if laws allow, customisible logic of processing...
+				</blockquote></dd>
 			</div>
+			<div class="next">
+				<dt>Options and <br>characteristics</dt>
+				<dd><blockquote>
+					Abilty define unlimited list of options and characteristics, that can be used for search and filtering...
+				</blockquote></dd>
+			</div>		
+			<p class="next note">Of course, it's only small part, that can have e-shop, <br>
+			but the most essentials</p>
 		</dl>
 		<style>
 			#Shop dt {
@@ -166,8 +197,8 @@
 			}
 			#Shop dd {
 				position: absolute;
-				width: 45%;
-				height: 50%;
+				width: 40%;
+				height: 40%;
 				right: 5%;
 				top: 35%;
 				background: #fff;
@@ -186,7 +217,7 @@
 			<li class="next">Cart, orders, order statuses</li>
 			<li class="next">Payment not extensible</li>
 		</ul>
-		<img src="pictures/mslogo.png" alt="">
+		<img src="pictures/ms.png" alt="">
 		<style>
 			#Ms1 p {
 				margin-bottom: 10px;
@@ -194,10 +225,9 @@
 			#Ms1 img {
 				position: absolute;
 				right: 10%;
-				bottom: 15%;
+				bottom: 12%;
 				width: 300px;
 				height: 150px;
-				background: blue;
 			}
 		</style>
 	</div></section>
@@ -301,32 +331,35 @@
 		<h2>Ecosystem</h2>
 	</div></section>
 
-	<section class="slide wip" id="Vs"><div>
+	<section class="slide" id="Vs"><div>
 		<h2 class="center">Store vs Marketplace</h2>
-
 		<div class="column x2">
-			<ul class="proscons">
+			<ul class="pc">
 				<li class="ko">One developer or team</li>
-				<li class="ko">No way add own extra for sale</li>
-				<li class="ok">Support from team (best quality)</li>
-				<li class=""></li>
+				<li class="ko">No way to add extra for sale</li>
+				<li class="ok">Support from team <br> (best quality)</li>
+				<li class="ok">Quality of extras</li>
 			</ul>
 		</div>
 		<div class="column x2">
-			<ul class="proscons">
+			<ul class="pc">
 				<li class="ok">Many independent developers</li>
-				<li>Easy to add own extra</li>
+				<li class="ok">Easy to add own extra</li>
+				<li class="ko">Support from developer, no guarantee</li>
+				<li class="ko">Fee or percent to marketplace owner</li>
 			</ul>
 		</div>
 
 		<ol>
-			<li class="next">Official MODX Repository - <span class="no">market</span>place</li>
+			<li class="next">Official MODX Repository - <span class="no">market </span>place</li>
 			<li class="next">modstore.pro</li>
 		</ol>
-
 		<style>
-			#Vs .proscons {
-
+			#Vs .column {
+				margin-top: -25px;
+			}
+			#Vs ol {
+				margin-top: -25px;
 			}
 		</style>
 	</div></section>
@@ -341,7 +374,7 @@
 		</ul>
 		<p class="note">I hope in future each store will growth to real marketplace.<br> 
 		It's have to impact, but give awesome results.</p>
-		<img src="pictures/fingerup.png" alt="">
+		<img src="pictures/tup.png" alt="">
 		<style>
 			#Stores img {
 				position: absolute;
@@ -349,7 +382,6 @@
 				right: 10%;
 				width: 200px;
 				height: 200px;
-				background: blue;
 			}
 		</style>
 	</div></section>
@@ -360,6 +392,7 @@
 			<li class="next">Started on 11th of June, 2013</li>
 			<li class="next"><strong>store.simpledream.ru</strong> at first</li>
 			<li class="next">Basically extras from staff</li>
+			<li class="next">Fully based on MODX, include UI for manage packages and versions</li>
 		</ul>
 		<img src="pictures/sd.png" alt="">
 		<style>
@@ -435,20 +468,31 @@
 		<h2>¯\_(ツ)_/¯</h2>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide almost"><div>
 		<h2>How it create?</h2>
+		<ol>
+			<li class="next">Create or setup repository for MODX packages</li>
+			<li class="next">Build private section users with ability create auth keys</li>
+			<li class="next">Set content managment process: descriptions, documentation, tutorials, logos</li>
+			<li class="next">Build support section</li>
+			<li class="next">Built billing section</li>
+		</ol>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide almost"><div>
 		<h2>How it support?</h2>
+		<ul>
+			<li>Hire designer for make logos</li>
+			<li>Hire people for provide support or require support from authors with penalties if not</li>
+			<li>Hire writer for create descriptions</li>
+			<li>Require authors publish documentation before package</li>
+		</ul>
 	</div></section>
 
 	<section class="slide wip"><div>
 		<h2>Conclusions</h2>
-
 		<ul>
-			<li class="next">One </li>
-
+			<li class="next"></li>
 		</ul>
 	</div></section>
 
