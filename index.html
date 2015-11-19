@@ -46,6 +46,10 @@
 		.wip {
 			outline: 20px solid orangered;
 		}
+		.no {
+			text-decoration: line-through;
+			color: gray;
+		}
 	</style>
 </head>
 <body class="list">
@@ -182,9 +186,18 @@
 			<li class="next">Cart, orders, order statuses</li>
 			<li class="next">Payment not extensible</li>
 		</ul>
+		<img src="pictures/mslogo.png" alt="">
 		<style>
 			#Ms1 p {
 				margin-bottom: 10px;
+			}
+			#Ms1 img {
+				position: absolute;
+				right: 10%;
+				bottom: 15%;
+				width: 300px;
+				height: 150px;
+				background: blue;
 			}
 		</style>
 	</div></section>
@@ -193,7 +206,7 @@
 		<h2>Mini Shop 2</h2>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide"><div>
 		<h2>Mini Shop 2</h2>
 		<ul>
 			<li class="next">Released in a year after first version: March 3, 2013</li>
@@ -201,7 +214,7 @@
 			<li class="next">Categories and Products as CRC</li>
 			<li class="next">Cart, Orders, Statuses was rewritten</li>
 			<li class="next">Was added Deliveries and Payments, also Gallery</li>
-			<li class="next now">Relations between products, Customisible Options</li>
+			<li class="next">Relations between products, Customisible Options</li>
 		</ul>
 	</div></section>
 
@@ -288,20 +301,60 @@
 		<h2>Ecosystem</h2>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide wip" id="Vs"><div>
 		<h2 class="center">Store vs Marketplace</h2>
 
-		<h3>Stores</h3>
-		<p>modmore.com - only Modmore</p>
-		extras.io - as marketplace, but without payments
-		rstore.pro - only Vladimir Grishin
-		aestore.by - my, in progress
+		<div class="column x2">
+			<ul class="proscons">
+				<li class="ko">One developer or team</li>
+				<li class="ko">No way add own extra for sale</li>
+				<li class="ok">Support from team (best quality)</li>
+				<li class=""></li>
+			</ul>
+		</div>
+		<div class="column x2">
+			<ul class="proscons">
+				<li class="ok">Many independent developers</li>
+				<li>Easy to add own extra</li>
+			</ul>
+		</div>
 
-		<h3>Marketplace</h3>
-		modstore.pro - many extras, many authors
+		<ol>
+			<li class="next">Official MODX Repository - <span class="no">market</span>place</li>
+			<li class="next">modstore.pro</li>
+		</ol>
+
+		<style>
+			#Vs .proscons {
+
+			}
+		</style>
 	</div></section>
 
-	<section class="slide" id="Modstore"><div>
+	<section class="slide" id="Stores"><div>
+		<h2>Existing stores</h2>
+		<ul>
+			<li>modmore.com - Mark Hamstra and team</li>
+			<li>extras.io - Adido Team</li>
+			<li>rstore.pro - Vladimir Grishin</li>
+			<li><span class="no">aestore.by</span> - me, wip</li>
+		</ul>
+		<p class="note">I hope in future each store will growth to real marketplace.<br> 
+		It's have to impact, but give awesome results.</p>
+		<img src="pictures/fingerup.png" alt="">
+		<style>
+			#Stores img {
+				position: absolute;
+				top: 17%;
+				right: 10%;
+				width: 200px;
+				height: 200px;
+				background: blue;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide wip" id="Modstore"><div>
 		<h2>History of modstore.pro</h2>
 		<ul>
 			<li class="next">Started on 11th of June, 2013</li>
@@ -384,6 +437,10 @@
 
 	<section class="slide wip"><div>
 		<h2>How it create?</h2>
+	</div></section>
+
+	<section class="slide wip"><div>
+		<h2>How it support?</h2>
 	</div></section>
 
 	<section class="slide wip"><div>
