@@ -120,6 +120,10 @@
 		</style>
 	</div></section>
 
+	<section class="slide shout"><div>
+		<h2><a href="http://bit.do/modxpo">bit.do/modxpo</a></h2>
+	</div></section>
+
 	<section class="slide cover" id="Iam"><div>
 		<h2>Ivan Klimchuk</h2>
 		<ul>
@@ -248,33 +252,55 @@
 		</ul>
 	</div></section>
 
-	<section class="slide cover wip"><div>
-		<h2>Cart</h2>
-		<img class="width" src="pictures/credit-card.jpg" alt="">
+	<section class="slide cover" id="Screens"><div>
+		<ul class="slideshow">
+			<!-- (li.next>img[src="pictures/ms/$.png" alt=""])*3 -->
+			<li><img src="pictures/ms/1.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/2.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/3.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/4.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/5.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/6.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/7.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/8.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/9.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/10.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/11.png" alt=""></li>
+			<li class="next"><img src="pictures/ms/12.png" alt=""></li>
+		</ul>
+		<style>
+			#Screens .slideshow li:before {
+				content: '';
+			}
+		</style>
 	</div></section>
 
-	<section class="slide wip"><div>
-		<h2>What ms can do</h2>
-		<p>
-			list and each item with screen at the right side
-		</p>
-	</div></section>
-
-	<section class="slide wip" id="Modx"><div>
+	<section class="slide" id="Modx"><div>
 		<h2><strong>MOD</strong>ular and e<strong>X</strong>tendable</h2>
-		<h3>MS too</h3>
-		<p>
-			really?
+		<p>Can be extended: Cart, Delivery, Order, Payment <br>
+			<code><strong>*</strong>handler.php</code>
 		</p>
+		<p>Special MS2 plugins: adding custom fields. MS2 upgrading keeps their in safety</p>
+		<p>All power of MODX: snippets, plugins, chunks, lexicons and etc.</p>
+		<p class="note">Approximatly 50 extras in modtore.pro for MiniShop2</p>
 		<style>
 			#Modx h2 strong {
 				font-family: 'Open Sans';
+			}
+			#Modx p {
+				margin-bottom: 20px;
 			}
 		</style>
 	</div></section>
 
 	<section class="slide wip"><div>
 		<h2>Cart handler</h2>
+		<code>class CustomCartHandler extends msCartHandler implemets msCartInterface</code>
+			{
+
+			}
+		</code>
+
 	</div></section>
 
 	<section class="slide wip"><div>
@@ -314,17 +340,27 @@
 		</ul>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide" id="Future"><div>
 		<h2>Future of MiniShop. Good news</h2>
 		<ul>
-			<li>Coming version 3 (Vasily Naumkin)</li>
+			<li><strong>Coming version 3 (Vasily Naumkin)</strong></li>
 			<li>Coming big refactoring of code and getting rid of annoying bugs</li>
-			<li><strong>More APIs for extends</strong></li>
+			<li>More APIs for extends</li>
 			<li>Also hard work on documentation news monthes</li>
 			<li>Eglish version of docs too</li>
 		</ul>
 		<p class="next note">Vasiliy promised anounce version 3 in <strong>MODX Meetup Minsk</strong><br>
 		on 19th December.</p>
+		<img src="pictures/modx3.png" alt="">
+		<style>
+			#Future img {
+				position: absolute;
+				width: 150px;
+				bottom: -15px;
+				right: -6px;
+				transform: rotate(-35deg);
+			}
+		</style>
 	</div></section>
 
 	<section class="slide shout"><div>
@@ -391,8 +427,8 @@
 		<ul>
 			<li class="next">Started on 11th of June, 2013</li>
 			<li class="next"><strong>store.simpledream.ru</strong> at first</li>
-			<li class="next">Basically extras from staff</li>
-			<li class="next">Fully based on MODX, include UI for manage packages and versions</li>
+			<li class="next">Basically extras from staff - was like Store</li>
+			<li class="next"></li>			
 		</ul>
 		<img src="pictures/sd.png" alt="">
 		<style>
