@@ -343,15 +343,18 @@
 	<section class="slide" id="Future"><div>
 		<h2>Future of MiniShop. Good news</h2>
 		<ul>
-			<li><strong>Coming version 3 (Vasily Naumkin)</strong></li>
-			<li>Coming big refactoring of code and getting rid of annoying bugs</li>
-			<li>More APIs for extends</li>
-			<li>Also hard work on documentation news monthes</li>
-			<li>Eglish version of docs too</li>
+			<li class="next"><strong>Coming version 3 (Vasily Naumkin)</strong></li>
+			<li class="next invisible">
+				<img src="pictures/modx3.png" alt="">
+			</li>
+			<li class="next">Coming big refactoring of code and getting rid of annoying bugs</li>
+			<li class="next">More APIs for extends</li>
+			<li class="next">Also hard work on documentation news monthes</li>
+			<li class="next">English version of docs too</li>
 		</ul>
 		<p class="next note">Vasiliy promised anounce version 3 in <strong>MODX Meetup Minsk</strong><br>
 		on 19th December.</p>
-		<img src="pictures/modx3.png" alt="">
+		
 		<style>
 			#Future img {
 				position: absolute;
@@ -359,6 +362,13 @@
 				bottom: -15px;
 				right: -6px;
 				transform: rotate(-35deg);
+				z-index: 111;
+			}
+			#Future .invisible {
+				height: 0;
+			}
+			#Future .invisible:before {
+				content: '';
 			}
 		</style>
 	</div></section>
