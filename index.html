@@ -293,37 +293,102 @@
 		</style>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<style>
+		.slide.code h2 {
+			margin-top: -60px;
+		}
+		.slide.code pre {
+			margin-bottom: 10px;
+		}
+		code { color: gray !important; font-size: 18px; }
+		code .class { color: gray; }
+		code .cname { color: #3E68FF; }
+		code .cparent { color: magenta; }
+		code .cinterface { color: #FF9620; }
+		code .quote { color: gray; }
+		code .method { color: #45B214; }
+		code .var { color: #28B3FF; }
+	</style>
+	<section class="slide code"><div>
 		<h2>Cart handler</h2>
-		<code>class CustomCartHandler extends msCartHandler implemets msCartInterface</code>
-			{
-
-			}
-		</code>
-
+		<pre>
+			<code>class <span class="cname">CustomCartHandler</span> extends <span class="cparent">msCartHandler</span> 
+	implemets <span class="cinterface">msCartInterface</span> {</code>
+			<code>	public function <span class="method">add</span>(<span class="var">$id</span>, <span class="var">$count</span> = 1, <span class="var">$options</span> = array()) {}</code>
+			<code>	public function <span class="method">remove</span>($key) {}</code>
+			<code>	public function <span class="method">change</span>($key, $count) {}</code>
+			<code>	public function <span class="method">clean</span>() {}</code>
+			<code>	public function <span class="method">status</span>($data = array()) {}</code>
+			<code>	public function <span class="method">get</span>() {}</code>
+			<code>	public function <span class="method">set</span>($cart = array()) {}</code>
+			<code>}</code>	
+		</pre>
+		<a href="http://bit.do/msch">bit.do/msch</a>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide code"><div>
 		<h2>Order handler</h2>
+		<pre>
+			<code>class <span class="cname">CustomOrderHandler</span> extends <span class="cparent">msOrderHandler</span> 
+	implements <span class="cinterface">msOrderInterface</span> {</code>
+			<code>public function <span class="method">add</span>(<span class="var">$key</span>, <span class="var">$value</span>) {}</code>
+			<code>	public function <span class="method">validate</span>(<span class="var">$key</span>, <span class="var">$value</span>) {}</code>
+			<code>	public function <span class="method">remove</span>(<span class="var">$key</span>) {}</code>
+			<code>	public function <span class="method">get</span>() {}</code>
+			<code>	public function <span class="method">set</span>(array <span class="var">$order</span>) {}</code>
+			<code>	public function <span class="method">submit</span>() {}</code>
+			<code>	public function <span class="method">clean</span>() {}</code>
+			<code>	public function <span class="method">getCost</span>() {}</code>
+			<code>}</code>
+		</pre>
+		<a href="http://bit.do/msoh">bit.do/msoh</a>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide code"><div>
 		<h2>Delivery handler</h2>
+		<pre>
+			<code>class <span class="cname">CustomDeliveryHandler</span> extends <span class="cparent">msDeliveryHandler</span> 
+	implements <span class="cinterface">msDeliveryInterface</span> {</code>
+			<code>	public function <span class="method">getCost</span>(msOrderInterface <span class="var">$order</span>, 
+		msDelivery <span class="var">$delivery</span>, <span class="var">$cost</span> = 0) {}</code>
+			<code>	public function <span class="method">error</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array()) {}</code>
+			<code>	public function <span class="method">success</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array()) {}</code>
+			<code>}</code>
+		</pre>
+		<a href="http://bit.do/msdh">bit.do/msdh</a>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide code"><div>
 		<h2>Payment handler</h2>
-		stats	
+		<pre>
+			<code>class <span class="cname">CustomPaymentHandler</span> extends <span class="cparent">msPaymentHandler</span> 
+	implements <span class="cinterface">msPaymentInterface</span> {</code>
+			<code>	public function <span class="method">send</span>(msOrder <span class="var">$order</span>) {}</code>
+			<code>	public function <span class="method">receive</span>(msOrder <span class="var">$order</span>) {}</code>
+			<code>	public function <span class="method">getCost</span>(msOrderInterface <span class="var">$order</span>, 
+		msPayment <span class="var">$payment</span>, <span class="var">$cost</span> = 0) {}</code>
+			<code>	public function <span class="method">error</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array());</code>
+			<code>	public function <span class="method">success</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array());</code>
+			<code>}</code>
+		</pre>
+		<a href="http://bit.do/msph">bit.do/msph</a>
 	</div></section>
 
 	<section class="slide wip"><div>
 		<h2>Awesome! field plugins</h2>
 		more words
+
+		тут написать про расширение полей
 	</div></section>
 
 	<section class="slide wip"><div>
-		<h2>Other ways to extend or change behavior</h2>
+		<h2>Awesome! field plugins 2</h2>
 		more words
+		тут тоже, но что-нить другое
 	</div></section>
 
 	<section class="slide"><div>
@@ -343,15 +408,18 @@
 	<section class="slide" id="Future"><div>
 		<h2>Future of MiniShop. Good news</h2>
 		<ul>
-			<li><strong>Coming version 3 (Vasily Naumkin)</strong></li>
-			<li>Coming big refactoring of code and getting rid of annoying bugs</li>
-			<li>More APIs for extends</li>
-			<li>Also hard work on documentation news monthes</li>
-			<li>Eglish version of docs too</li>
+			<li class="next"><strong>Coming version 3 (Vasily Naumkin)</strong></li>
+			<li class="next invisible">
+				<img src="pictures/modx3.png" alt="">
+			</li>
+			<li class="next">Coming big refactoring of code and getting rid of annoying bugs</li>
+			<li class="next">More APIs for extends</li>
+			<li class="next">Also hard work on documentation news monthes</li>
+			<li class="next">English version of docs too</li>
 		</ul>
 		<p class="next note">Vasiliy promised anounce version 3 in <strong>MODX Meetup Minsk</strong><br>
 		on 19th December.</p>
-		<img src="pictures/modx3.png" alt="">
+		
 		<style>
 			#Future img {
 				position: absolute;
@@ -359,6 +427,13 @@
 				bottom: -15px;
 				right: -6px;
 				transform: rotate(-35deg);
+				z-index: 111;
+			}
+			#Future .invisible {
+				height: 0;
+			}
+			#Future .invisible:before {
+				content: '';
 			}
 		</style>
 	</div></section>
