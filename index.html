@@ -297,23 +297,24 @@
 		.slide.code h2 {
 			margin-top: -60px;
 		}
-		code { color: gray !important; font-size: 18px;}
+		.slide.code pre {
+			margin-bottom: 10px;
+		}
+		code { color: gray !important; font-size: 18px; }
 		code .class { color: gray; }
-		code .cname { color: blue; }
+		code .cname { color: #3E68FF; }
 		code .cparent { color: magenta; }
-		code .cinterface { color: orange; }
+		code .cinterface { color: #FF9620; }
 		code .quote { color: gray; }
-		code .method { color: green; }
-		code .var { color: cyan; }
+		code .method { color: #45B214; }
+		code .var { color: #28B3FF; }
 	</style>
-	<section class="slide code wip"><div>
+	<section class="slide code"><div>
 		<h2>Cart handler</h2>
 		<pre>
 			<code>class <span class="cname">CustomCartHandler</span> extends <span class="cparent">msCartHandler</span> 
 	implemets <span class="cinterface">msCartInterface</span> {</code>
-
-			<code>	public function <span class="method">initialize</span>(<span class="var">$ctx</span> = 'web') {}</code>
-			<code>	public function <span class="method">add</span>($id, $count = 1, $options = array()) {}</code>
+			<code>	public function <span class="method">add</span>(<span class="var">$id</span>, <span class="var">$count</span> = 1, <span class="var">$options</span> = array()) {}</code>
 			<code>	public function <span class="method">remove</span>($key) {}</code>
 			<code>	public function <span class="method">change</span>($key, $count) {}</code>
 			<code>	public function <span class="method">clean</span>() {}</code>
@@ -322,61 +323,59 @@
 			<code>	public function <span class="method">set</span>($cart = array()) {}</code>
 			<code>}</code>	
 		</pre>
+		<a href="http://bit.do/msch">bit.do/msch</a>
 	</div></section>
 
-	<section class="slide code wip"><div>
+	<section class="slide code"><div>
 		<h2>Order handler</h2>
 		<pre>
-			class CustomOrderHandler extends msOrderHandler implements msOrderInterface {
-				
-				public function initialize($ctx = 'web');
-				public function add($key, $value);
-				public function validate($key, $value);
-				public function remove($key);
-				public function get();
-				public function set(array $order);
-				public function submit();
-				public function clean();
-				public function getCost();
-
-			}
+			<code>class <span class="cname">CustomOrderHandler</span> extends <span class="cparent">msOrderHandler</span> 
+	implements <span class="cinterface">msOrderInterface</span> {</code>
+			<code>public function <span class="method">add</span>(<span class="var">$key</span>, <span class="var">$value</span>) {}</code>
+			<code>	public function <span class="method">validate</span>(<span class="var">$key</span>, <span class="var">$value</span>) {}</code>
+			<code>	public function <span class="method">remove</span>(<span class="var">$key</span>) {}</code>
+			<code>	public function <span class="method">get</span>() {}</code>
+			<code>	public function <span class="method">set</span>(array <span class="var">$order</span>) {}</code>
+			<code>	public function <span class="method">submit</span>() {}</code>
+			<code>	public function <span class="method">clean</span>() {}</code>
+			<code>	public function <span class="method">getCost</span>() {}</code>
+			<code>}</code>
 		</pre>
+		<a href="http://bit.do/msoh">bit.do/msoh</a>
 	</div></section>
 
-	<section class="slide code wip"><div>
+	<section class="slide code"><div>
 		<h2>Delivery handler</h2>
 		<pre>
-			class CustomDeliveryHandler extends msDeliveryHandler implements msDeliveryInterface {
-
-			public function getCost(msOrderInterface $order, msDelivery $delivery, $cost = 0);
-	
-			public function error($message = '', $data = array(), $placeholders = array());
-	
-			public function success($message = '', $data = array(), $placeholders = array());
-
-			}
-
+			<code>class <span class="cname">CustomDeliveryHandler</span> extends <span class="cparent">msDeliveryHandler</span> 
+	implements <span class="cinterface">msDeliveryInterface</span> {</code>
+			<code>	public function <span class="method">getCost</span>(msOrderInterface <span class="var">$order</span>, 
+		msDelivery <span class="var">$delivery</span>, <span class="var">$cost</span> = 0) {}</code>
+			<code>	public function <span class="method">error</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array()) {}</code>
+			<code>	public function <span class="method">success</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array()) {}</code>
+			<code>}</code>
 		</pre>
+		<a href="http://bit.do/msdh">bit.do/msdh</a>
 	</div></section>
 
-	<section class="slide code wip"><div>
+	<section class="slide code"><div>
 		<h2>Payment handler</h2>
-
-		class CustomPaymentHandler extends msPaymentHandler implements msPaymentInterface {
-
-
-		
-
-		public function send(msOrder $order);
-	
-	public function receive(msOrder $order);
-	
-	public function getCost(msOrderInterface $order, msPayment $payment, $cost = 0);
-	
-	public function error($message = '', $data = array(), $placeholders = array());
-	
-	public function success($message = '', $data = array(), $placeholders = array());
-	}
+		<pre>
+			<code>class <span class="cname">CustomPaymentHandler</span> extends <span class="cparent">msPaymentHandler</span> 
+	implements <span class="cinterface">msPaymentInterface</span> {</code>
+			<code>	public function <span class="method">send</span>(msOrder <span class="var">$order</span>) {}</code>
+			<code>	public function <span class="method">receive</span>(msOrder <span class="var">$order</span>) {}</code>
+			<code>	public function <span class="method">getCost</span>(msOrderInterface <span class="var">$order</span>, 
+		msPayment <span class="var">$payment</span>, <span class="var">$cost</span> = 0) {}</code>
+			<code>	public function <span class="method">error</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array());</code>
+			<code>	public function <span class="method">success</span>(<span class="var">$message</span> = '', <span class="var">$data</span> = array(), 
+		<span class="var">$placeholders</span> = array());</code>
+			<code>}</code>
+		</pre>
+		<a href="http://bit.do/msph">bit.do/msph</a>
 	</div></section>
 
 	<section class="slide wip"><div>
