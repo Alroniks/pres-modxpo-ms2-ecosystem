@@ -293,37 +293,103 @@
 		</style>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<style>
+		.slide.code h2 {
+			margin-top: -60px;
+		}
+		code { color: gray !important; font-size: 18px;}
+		code .class { color: gray; }
+		code .cname { color: blue; }
+		code .cparent { color: magenta; }
+		code .cinterface { color: orange; }
+		code .quote { color: gray; }
+		code .method { color: green; }
+		code .var { color: cyan; }
+	</style>
+	<section class="slide code wip"><div>
 		<h2>Cart handler</h2>
-		<code>class CustomCartHandler extends msCartHandler implemets msCartInterface</code>
-			{
+		<pre>
+			<code>class <span class="cname">CustomCartHandler</span> extends <span class="cparent">msCartHandler</span> 
+	implemets <span class="cinterface">msCartInterface</span> {</code>
+
+			<code>	public function <span class="method">initialize</span>(<span class="var">$ctx</span> = 'web') {}</code>
+			<code>	public function <span class="method">add</span>($id, $count = 1, $options = array()) {}</code>
+			<code>	public function <span class="method">remove</span>($key) {}</code>
+			<code>	public function <span class="method">change</span>($key, $count) {}</code>
+			<code>	public function <span class="method">clean</span>() {}</code>
+			<code>	public function <span class="method">status</span>($data = array()) {}</code>
+			<code>	public function <span class="method">get</span>() {}</code>
+			<code>	public function <span class="method">set</span>($cart = array()) {}</code>
+			<code>}</code>	
+		</pre>
+	</div></section>
+
+	<section class="slide code wip"><div>
+		<h2>Order handler</h2>
+		<pre>
+			class CustomOrderHandler extends msOrderHandler implements msOrderInterface {
+				
+				public function initialize($ctx = 'web');
+				public function add($key, $value);
+				public function validate($key, $value);
+				public function remove($key);
+				public function get();
+				public function set(array $order);
+				public function submit();
+				public function clean();
+				public function getCost();
 
 			}
-		</code>
-
+		</pre>
 	</div></section>
 
-	<section class="slide wip"><div>
-		<h2>Order handler</h2>
-	</div></section>
-
-	<section class="slide wip"><div>
+	<section class="slide code wip"><div>
 		<h2>Delivery handler</h2>
+		<pre>
+			class CustomDeliveryHandler extends msDeliveryHandler implements msDeliveryInterface {
+
+			public function getCost(msOrderInterface $order, msDelivery $delivery, $cost = 0);
+	
+			public function error($message = '', $data = array(), $placeholders = array());
+	
+			public function success($message = '', $data = array(), $placeholders = array());
+
+			}
+
+		</pre>
 	</div></section>
 
-	<section class="slide wip"><div>
+	<section class="slide code wip"><div>
 		<h2>Payment handler</h2>
-		stats	
+
+		class CustomPaymentHandler extends msPaymentHandler implements msPaymentInterface {
+
+
+		
+
+		public function send(msOrder $order);
+	
+	public function receive(msOrder $order);
+	
+	public function getCost(msOrderInterface $order, msPayment $payment, $cost = 0);
+	
+	public function error($message = '', $data = array(), $placeholders = array());
+	
+	public function success($message = '', $data = array(), $placeholders = array());
+	}
 	</div></section>
 
 	<section class="slide wip"><div>
 		<h2>Awesome! field plugins</h2>
 		more words
+
+		тут написать про расширение полей
 	</div></section>
 
 	<section class="slide wip"><div>
-		<h2>Other ways to extend or change behavior</h2>
+		<h2>Awesome! field plugins 2</h2>
 		more words
+		тут тоже, но что-нить другое
 	</div></section>
 
 	<section class="slide"><div>
