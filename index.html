@@ -378,17 +378,114 @@
 		<a href="http://bit.do/msph">bit.do/msph</a>
 	</div></section>
 
-	<section class="slide wip"><div>
-		<h2>Awesome! field plugins</h2>
-		more words
-
-		тут написать про расширение полей
+	<section class="slide" id="Plugins"><div>
+		<h2>Special MS2 plugins</h2>
+		<div class="column x2">
+			<pre>
+				<code>ALTER TABLE `modx_ms2_products` 
+ADD `comment` VARCHAR(255) NULL 
+DEFAULT NULL;</code>
+				<code>ALTER TABLE `modx_ms2_products` 
+ADD INDEX (`comment`);</code>	
+			</pre>
+		</div>
+		<div class="column x2">
+			<img src="pictures/opts.png" alt="">	
+		</div>	
+		<style>
+			#Plugins img {
+				max-width: 100%;
+			}
+		</style>
 	</div></section>
 
-	<section class="slide wip"><div>
-		<h2>Awesome! field plugins 2</h2>
-		more words
-		тут тоже, но что-нить другое
+	<section class="slide"><div>
+		<h2>Special MS2 plugins</h2>
+		<pre>
+			<code>/core/components/miniShop2/plugins/</code>
+			<code>/assets/components/miniShop2/plugins/</code>
+		</pre>
+
+		<h3><strong>Comment field plugin</strong></h3>
+		<pre>
+			<code>/core/components/miniShop2/plugins/comment/index.php</code>
+			<code>/core/components/miniShop2/plugins/comment/model/msproductdata.map.inc.php</code>
+			<code>/assets/components/miniShop2/plugins/comment/msproductdata.js</code>
+		</pre>
+	</div></section>
+
+	<section class="slide code"><div>
+		<h2>comment/index.php</h2>
+		<pre>
+			<code>// /core/components/miniShop2/plugins/comment/index.php</code>
+			<code>return array(</code>
+			<code>	'xpdo_meta_map' => array(</code>
+			<code>	'msProductData' => require_once dirname(__FILE__)</code>
+			<code>		.'/model/msproductdata.map.inc.php'</code>
+			<code>	),</code>
+			<code>	'manager' => array(</code>
+			<code>		'msProductData' => MODX_ASSETS_URL</code>
+			<code>			. 'components/minishop2/plugins/comment/msproductdata.js'</code>
+			<code>	)</code>
+			<code>);</code>
+		</pre>
+	</div></section>
+
+	<section class="slide code" id="PluginModel"><div>
+		<pre>
+			<code>// /core/components/minishop2/plugins/comment/model/msproductdata.map.inc.php</code>		
+			<code>return [</code>
+			<code>	'fields' => ['color' => NULL],</code>
+			<code>	'fieldMeta' => [</code>
+			<code>		'comment' => [</code>
+			<code>			'dbtype' => 'varchar', 'precision' => '255', 'phptype' => 'string',</code>
+			<code>			'null' => true, 'default' => NULL</code>
+			<code>		]</code>
+			<code>	],</code>
+			<code>	'indexes' => [</code>
+			<code>		'comment' => [</code>
+			<code>			'alias' => 'comment', 'primary' => false, 'unique' => false, 'type' => 'BTREE',</code>
+			<code>			'columns' => ['comment' => ['length' => '', 'collation' => 'A', 'null' => false])</code>
+			<code>		]</code>
+			<code>	]</code>
+			<code>);</code>
+		</pre>
+		<style>
+			#PluginModel pre {
+				margin-top: -60px;
+				margin-left: -50px;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide code" id="PluginPanel"><div>
+		<pre>
+			<code>// /assets/components/minishop2/plugins/comment/msproductdata.js</code>
+			<code>miniShop2.plugin.comment = {</code>
+			<code>	getFields: function(config) {</code>
+			<code>		return {</code>
+			<code>			comment: { xtype: 'textfield', fieldLabel: 'Comment' }</code>
+			<code>		}</code>
+			<code>	},</code>
+			<code>	getColumns: function() {</code>
+			<code>		return {</code>
+			<code>			comment: { width:50, sortable: false, editor: {</code>
+			<code>				xtype:'textfield', name: 'comment'}</code>
+			<code>			}</code>
+			<code>		}</code>
+			<code>	}</code>
+			<code>};</code>
+		</pre>
+		<style>
+			#PluginPanel pre {
+				margin-top: -60px;
+				margin-left: -50px;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<img src="pictures/opts2.png" alt="">
 	</div></section>
 
 	<section class="slide"><div>
